@@ -3,6 +3,7 @@
 #include "csv.hpp"
 #include <vector>
 
+
 class Student : public Person {
   int grad_year_;
   std::vector<std::string> courses_;
@@ -52,4 +53,5 @@ public:
            csv_escape(name_) + "," + csv_escape(email_) + "," +
            std::to_string(grad_year_) + "," + csv_escape(joined);
   }
+
 };
