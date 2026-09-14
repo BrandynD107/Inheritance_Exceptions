@@ -3,7 +3,6 @@
 #include "exceptions.hpp"
 #include <string>
 #include <regex>
-#include <span>
 
 class Person : public Serializable {
 protected:
@@ -31,13 +30,4 @@ public:
   int id() const { return id_; }
   const std::string& name() const { return name_; }
   const std::string& email() const { return email_; }
-
-  std::string csv_header() const override
-  {
-    return("role,id,name,email,grad_year,office,courses,teaches");
-  }
-  std::string csv_row() const override 
-  {
-    std::to_string(id_) + "," + csv_escape(name_) + csv_escape(email_);
-  }
 };

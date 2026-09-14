@@ -8,12 +8,26 @@ class Student : public Person {
   int grad_year_;
   std::vector<std::string> courses_;
 public:
+  Student(const nlohmann::json& j): Student(from_json(j)) {}
   Student(int id, std::string name, std::string email, int grad_year,
           std::vector<std::string> courses = {})
     : Person(id, std::move(name), std::move(email)),
       grad_year_(grad_year), courses_(std::move(courses)) {
     if (grad_year_ < 2000) throw ValidationError("grad_year too small");
   }
+  std:: string get_name() const { return name_; }
+  static Student from_json(const nlohmann::json& j)
+  {
+
+    if(!j.contains("id")||!j.contains("name")||!j.contains("email")||!j.contains("grad_year")||!j.contains("courses")||!j["courses"].is_array())
+    {
+      throw SerializationError("Missing required fields in JSON");
+    }
+    return Student(j.at("id").get<int>(), j.at("name").get<std::string>(), j.at("email").get<std::string>(), j.at("grad_year").get<int>(), j.at("courses").get<std::vector<std::string>>());
+
+    
+  }
+
 
   std::string role() const override { return "Student"; }
 

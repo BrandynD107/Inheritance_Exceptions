@@ -7,6 +7,7 @@ class Instructor : public Person {
   std::string office_;
   std::vector<std::string> teaches_;
 public:
+  Instructor(const nlohmann::json& j): Instructor(from_json(j)) {}
   Instructor(int id, std::string name, std::string email,
              std::string office, std::vector<std::string> teaches = {})
     : Person(id, std::move(name), std::move(email)),
@@ -26,6 +27,16 @@ public:
       {"teaches", teaches_}
     };
   }
+   static Instructor from_json(const nlohmann::json& j)
+  {
+
+    if(!j.contains("id")||!j.contains("name")||!j.contains("email")||!j.contains("office")||!j.contains("teaches")||!j["teaches"].is_array())
+    {
+      throw SerializationError("Missing required fields in JSON");
+    }
+    return Instructor(j.at("id").get<int>(), j.at("name").get<std::string>(), j.at("email").get<std::string>(), j.at("office").get<std::string>(), j.at("teaches").get<std::vector<std::string>>());
+
+  }
 
   YAML::Node to_yaml() const override {
     YAML::Node n;
@@ -37,7 +48,7 @@ public:
     for (const auto& c : teaches_) n["teaches"].push_back(c);
     return n;
   }
-
+  std::string get_name() const { return name_; }
   std::string csv_header() const override {
     return "role,id,name,email,office,teaches"; // teaches joined by ';'
   }
