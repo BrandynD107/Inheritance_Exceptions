@@ -32,7 +32,7 @@ public:
 
     if(!j.contains("id")||!j.contains("name")||!j.contains("email")||!j.contains("office")||!j.contains("teaches")||!j["teaches"].is_array())
     {
-      throw SerializationError("Missing required fields in JSON");
+      throw ValidationError("Missing required fields in JSON");
     }
     return Instructor(j.at("id").get<int>(), j.at("name").get<std::string>(), j.at("email").get<std::string>(), j.at("office").get<std::string>(), j.at("teaches").get<std::vector<std::string>>());
 

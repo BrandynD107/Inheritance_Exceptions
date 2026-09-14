@@ -1,14 +1,14 @@
-Start testing: Sep 14 01:00 UTC
+Start testing: Sep 14 01:35 UTC
 ----------------------------------------------------------
 1/6 Testing: Student JSON serialization
 1/6 Test: Student JSON serialization
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "Student JSON serialization"
 Directory: /workspaces/Inheritance_Exceptions/build
-"Student JSON serialization" start time: Sep 14 01:00 UTC
+"Student JSON serialization" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Student JSON serialization"
-Randomness seeded to: 4093875182
+Randomness seeded to: 1292228754
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -16,7 +16,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Student JSON serialization" end time: Sep 14 01:00 UTC
+"Student JSON serialization" end time: Sep 14 01:35 UTC
 "Student JSON serialization" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -24,11 +24,11 @@ Test Passed.
 2/6 Test: Instructor YAML serialization
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "Instructor YAML serialization"
 Directory: /workspaces/Inheritance_Exceptions/build
-"Instructor YAML serialization" start time: Sep 14 01:00 UTC
+"Instructor YAML serialization" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Instructor YAML serialization"
-Randomness seeded to: 3057942594
+Randomness seeded to: 3972376205
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -36,7 +36,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Instructor YAML serialization" end time: Sep 14 01:00 UTC
+"Instructor YAML serialization" end time: Sep 14 01:35 UTC
 "Instructor YAML serialization" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -44,11 +44,11 @@ Test Passed.
 3/6 Test: CSV escaping handles commas and quotes
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "CSV escaping handles commas and quotes"
 Directory: /workspaces/Inheritance_Exceptions/build
-"CSV escaping handles commas and quotes" start time: Sep 14 01:00 UTC
+"CSV escaping handles commas and quotes" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "CSV escaping handles commas and quotes"
-Randomness seeded to: 1495099646
+Randomness seeded to: 2917838814
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -56,7 +56,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CSV escaping handles commas and quotes" end time: Sep 14 01:00 UTC
+"CSV escaping handles commas and quotes" end time: Sep 14 01:35 UTC
 "CSV escaping handles commas and quotes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,11 +64,11 @@ Test Passed.
 4/6 Test: Validation throws on bad email
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "Validation throws on bad email"
 Directory: /workspaces/Inheritance_Exceptions/build
-"Validation throws on bad email" start time: Sep 14 01:00 UTC
+"Validation throws on bad email" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Validation throws on bad email"
-Randomness seeded to: 1266680123
+Randomness seeded to: 2167026451
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -76,7 +76,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Validation throws on bad email" end time: Sep 14 01:00 UTC
+"Validation throws on bad email" end time: Sep 14 01:35 UTC
 "Validation throws on bad email" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -84,11 +84,11 @@ Test Passed.
 5/6 Test: Course JSON serialization
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "Course JSON serialization"
 Directory: /workspaces/Inheritance_Exceptions/build
-"Course JSON serialization" start time: Sep 14 01:00 UTC
+"Course JSON serialization" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Course JSON serialization"
-Randomness seeded to: 3386224694
+Randomness seeded to: 3498862491
 ===============================================================================
 All tests passed (6 assertions in 1 test case)
 
@@ -96,7 +96,7 @@ All tests passed (6 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Course JSON serialization" end time: Sep 14 01:00 UTC
+"Course JSON serialization" end time: Sep 14 01:35 UTC
 "Course JSON serialization" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -104,11 +104,11 @@ Test Passed.
 6/6 Test: Student from_json deserialization
 Command: "/workspaces/Inheritance_Exceptions/build/tests" "Student from_json deserialization"
 Directory: /workspaces/Inheritance_Exceptions/build
-"Student from_json deserialization" start time: Sep 14 01:00 UTC
+"Student from_json deserialization" start time: Sep 14 01:35 UTC
 Output:
 ----------------------------------------------------------
 Filters: "Student from_json deserialization"
-Randomness seeded to: 3446672841
+Randomness seeded to: 96272897
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -116,8 +116,8 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Student from_json deserialization" end time: Sep 14 01:00 UTC
+"Student from_json deserialization" end time: Sep 14 01:35 UTC
 "Student from_json deserialization" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 14 01:00 UTC
+End testing: Sep 14 01:35 UTC

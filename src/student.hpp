@@ -21,7 +21,7 @@ public:
 
     if(!j.contains("id")||!j.contains("name")||!j.contains("email")||!j.contains("grad_year")||!j.contains("courses")||!j["courses"].is_array())
     {
-      throw SerializationError("Missing required fields in JSON");
+      throw ValidationError("Missing required fields in JSON");
     }
     return Student(j.at("id").get<int>(), j.at("name").get<std::string>(), j.at("email").get<std::string>(), j.at("grad_year").get<int>(), j.at("courses").get<std::vector<std::string>>());
 
