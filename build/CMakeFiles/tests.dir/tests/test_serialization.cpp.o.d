@@ -420,4 +420,5 @@ CMakeFiles/tests.dir/tests/test_serialization.cpp.o: \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
  /workspaces/Inheritance_Exceptions/src/csv.hpp \
- /workspaces/Inheritance_Exceptions/src/instructor.hpp
+ /workspaces/Inheritance_Exceptions/src/instructor.hpp \
+ /workspaces/Inheritance_Exceptions/src/course.hpp
